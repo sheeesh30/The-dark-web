@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>The dark web</title>
+<body>
+	<header>
+		<div>
+		<h1 class="animated-text" speed="100">THE DARK WEB</h1>
+		<h2>
+			<nav class="navbar">
+		<ul>
+			<li><button><a href="#oui">Accueil </a></button></li>
+			<li><button><a href="site2.html">Blog</a></button></li>
+			<li><button><a href="#">nouveautés</a></button></li>
+			<li><button><a href="#cont">contact</a></button></li>
+		</ul>
+	       </nav>
+        </h2>
+         </header>
+    <header>
+    	<section>
+    		<div >
+    			<div class="flexCentre">
+    				<input class="recherche paddingsearch" type="search"value="THE DARK WEB">
+    			<script>
+    				const animatedTexts = document.querySelectorAll('.animated-text');
+                function animateText(animatedText) {
+                 const text = animatedText.textContent;
+                let speed = animatedText.getAttribute("speed");
+                let delay = animatedText.getAttribute("delay");
+
+                if (speed == null) {
+                speed = 150;
+                }
+
+                if (delay == null) {
+                delay = 0;
+                }
+
+                 animatedText.innerHTML = '';
+                 for (let i = 0; i < text.length; i++) {
+                  if (text[i] == ' ') {
+                    animatedText.innerHTML += ' ';
+                }
+                 animatedText.innerHTML += `<span>${text[i]}</span>`;
+                }
+
+                 setTimeout(function () {
+                 let idx = 0;
+                 function writeChar() {
+                 const span = animatedText.querySelectorAll('span')[idx];
+                 span.classList.add('fade');
+                 idx++;
+                 if (idx == text.length) {
+                 clearInterval(writeCharInterval);
+                }
+                }
+
+                let writeCharInterval = setInterval(writeChar, speed);
+                 }, delay);
+                 }
+
+                animatedTexts.forEach(animateText);
+    				
+    				
+    			</script>
+    			<span class="d buttonSearch">Rechercher</span>
+    		    </div>
+    	</section>
+    </header>
+	<p class="no"><img src="deep/web.jpg"alt="dark net"class="flottant"/><img src="deep/imagesz.jpg"><img src="deep/images.jpg"><img src="deep/pirate.jpg"><img src="deep/pirates.jpg"></p>
+	</div>
+    <section>
+    	<h3 id="oui">Un aperçu sur le dark web:</h3>
+	<p class="si">Qu'est-ce que <em>le dark web</em>?<br/>Et bien tout simplement, <em>le dark web</em> est tout ce qui ne se voit pas pour les utilisateurs normaux d'internet.En effet, c'est un tout autre monde de sites internet accessible via un certain type de logiciels.</p>
+	<p class="si">Vous pensez que quand vous accédez à un navigateur web et que vous vous rendez sur un moteur de recherche, vous avez accès à tout?<br/>Et bien vous vous trompez car en faisant cela vous effleurez à peine la surface d'internet.</p>
+	<p class="si">Cette partie visible s'appelle le <em>Surface web</em>,et se constitue majoritairement de:La presse en ligne, Les réseaux sociaux, les sites publics<br/>...bref tout ce qu'on peut trouver via une simple recherche sur un moteur de recherche.
+	</p>
+	<div>
+		<p class="oui" id="cont"><br/>cette section est indisponible pour le moment <br/>
+		-</p>
+	</div>
+</body>
+	
+
+</html>
