@@ -1,0 +1,72 @@
+body
+{
+    background-color:rgb(119,150,255);
+}
+h1
+{
+
+	font-size:3em;text-align: left;text-shadow: 6px 6px 8px black;color:white;
+}
+h2
+{
+	font-size: 2em;text-align:center;text-shadow: 6px 6px 5px black;color:white;
+}
+h3
+{
+	font-size: 2em;text-align:center;text-shadow: 6px 6px 5px black;color:white;
+
+}
+a
+{
+	color:white;text-decoration: none;font-size: 1.5em;
+}
+button
+{
+	cursor:pointer;border:0;background:transparent;position: relative;overflow:hidden;padding:20px 50px;
+	border-radius: 30px;box-shadow: 0px -0px 0px 0px rgba(143,64,248, .5),0px 0px 0px 0px rgba(39,200,255, .5);
+	transition:all .2s;
+}
+button::after
+{
+	content:"";width:400px;height:400px;background: linear-gradient(225deg,#27d86c 0%, #26caf8 50%, #c625d0 100%);
+	position: absolute;top:-50px;left:-100px;z-index: -1;
+	transition: all .5s;
+}
+
+button:hover::after
+{
+	transform: rotate(150deg);
+}
+button:hover
+{
+	transform: translate(0, -6px);box-shadow: 10px -10px 25px 0 rgba(143,64,248, .25),
+	 -10px 10px 25px 0px rgba(39,200,255, .25);
+}
+caption
+{
+	font-family:arial black;color:white;font-size: 20px;
+}
+td
+{
+	border: 2px solid rgb(119,150,255);padding:20px 70px;font-family: arial black;color:white;
+}
+table
+{
+    border-collapse:collapse;box-shadow:6px 6px 12px;margin:50px auto;height:10em;background-color:rgb(90,100,255);
+}
+thead
+{
+	background-color:white;
+}
+th
+{
+	border:2px solid rgb(119,150,255);padding:15px 90px;background-color:rgb(80,70,255);font-family:arial black;color:white;
+}
+p
+{
+	font-family: arial black;color:white;font-size: 20px;text-align:center;
+}
+.flottant
+{
+	float:left;width:120px;height:100px;margin-right:10px;box-shadow:6px 6px 3px black;
+}

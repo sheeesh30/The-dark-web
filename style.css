@@ -1,0 +1,112 @@
+h1
+{
+	font-size:4em;text-align: center;
+	border:3px white double;text-shadow: 6px 6px 2px black;
+	border-radius: 20px/10px;box-shadow: 6px 6px 6px black;color:white;
+}
+.animated-text span:not(.fade) {
+  opacity:0;
+  transform: translateY(50%) rotate(45deg);
+}
+
+.animated-text span {
+  transition:all .4s;
+  display:inline-block;
+}
+
+h3
+{
+	font-size:30px;text-align: center;text-shadow:6px 6px 18px black;color:rgb(3,34,76);font-family:arial black;
+}
+body
+{
+	background-color: rgba(90,120,254,10);
+
+}
+a
+{
+	color:white;text-decoration: none;font-family: arial black;
+}
+button
+{
+	cursor:pointer;border:0;background:transparent;position: relative;overflow:hidden;padding:20px 50px;
+	border-radius: 30px;box-shadow: 0px -0px 0px 0px rgba(143,64,248, .5),0px 0px 0px 0px rgba(39,200,255, .5);
+	transition:all .2s;font-size: 15px;
+}
+button::after
+{
+	content:"";width:400px;height:400px;background: linear-gradient(225deg,#27d86c 0%, #26caf8 50%, #c625d0 100%);
+	position: absolute;top:-50px;left:-100px;z-index: -1;
+	transition: all .5s;
+}
+button:hover::after
+{
+	transform: rotate(150deg);
+}
+button:hover
+{
+	transform: translate(0, -6px);box-shadow: 10px -10px 25px 0 rgba(143,64,248, .25),
+	 -10px 10px 25px 0px rgba(39,200,255, .25);
+}
+.flottant
+{
+	float:left;
+}
+img
+{
+	width: 20%;height:20%;
+}
+.no
+{
+	border:2px white dotted;box-shadow:5px 5px 5px black; 
+}
+.si
+{
+	font-family: arial black;color:white;text-align: center;font-size: 20px;margin:20px;
+
+}
+.flexCentre
+{
+	text-align: center;
+}
+.recherche
+{
+	height:30px;width:800px;font-size:15px;color:grey;font-family: arial black;box-shadow: 6px 6px 16px black;border-radius:12px;
+}
+.paddingsearch
+{
+	padding-left: 20px;
+}
+.d
+{
+	font-family: arial black;color:white;font-size: 18px;border: 3px solid rgb(3,34,76);background-color: rgb(3,34,76);
+	box-shadow: 6px 6px 16px black;border-radius: 12px;
+}
+.buttonSearch
+{
+	cursor:pointer;
+}
+.oui
+{
+    font-family: arial black;color:white;text-align: center;font-size: 20px;margin:20px;cursor:pointer;border:3px white double;
+    border-radius: 20px/10px;box-shadow: 6px 6px 6px black;
+
+}
+
+nav ul
+{
+	list-style-type:none;display:flex;align-items: center;
+}
+nav li
+{
+	margin right:15px;
+}
+nav a
+{
+	font-size:1.3em;color:#181818;padding-bottom:3px;text-decoration:none;
+}
+.navbar ul li a
+{
+	padding: 20px;color:white;
+}
+
